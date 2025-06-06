@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple E-Commerce</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-around;
+      background-color: #333;
+    }
+
+    .nav-buttons a {
+      flex: 1;
+      text-align: center;
+      padding: 12px 0;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-right: 1px solid #444;
+    }
+
+    .nav-buttons a:last-child {
+      border-right: none;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+    }
+
+    section:target {
+      display: block;
+    }
+
+    .product {
+      background-color: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .order-btn {
+      background-color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+
+<header>🛒 Simple Store</header>
+
+<div class="nav-buttons">
+  <a href="#products">Products</a>
+  <a href="#cart">Cart</a>
+  <a href="#order">Order</a>
+</div>
+
+<!-- Product List -->
+<section id="products">
+  <h2>Products</h2>
+
+  <div class="product">
+    <h3>Herbal Shampoo</h3>
+    <p>250ml for ₹120</p>
+    <a href="#cart" class="btn">Add to Cart</a>
+  </div>
+
+  <div class="product">
+    <h3>Nilavembu Powder</h3>
+    <p>100g for ₹80</p>
+    <a href="#cart" class="btn">Add to Cart</a>
+  </div>
+
+  <div class="product">
+    <h3>Shikakai Soap</h3>
+    <p>100g for ₹50</p>
+    <a href="#cart" class="btn">Add to Cart</a>
+  </div>
+</section>
+
+<!-- Cart -->
+<section id="cart">
+  <h2>Your Cart</h2>
+  <div class="product">
+    <p>🛍 No live cart logic (HTML only)<br>Add items manually or with JS later.</p>
+    <p><strong>Total: ₹0</strong></p>
+    <a href="#order" class="btn order-btn">Go to Order</a>
+  </div>
+</section>
+
+<!-- Order -->
+<section id="order">
+  <h2>Place Your Order</h2>
+  <div class="product">
+    <p>Thanks for shopping with us!</p>
+    <p>This is a demo order page.</p>
+  </div>
+</section>
+
+</body>
+</html>
